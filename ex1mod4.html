@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exercícios Curso JS Rocket</title>
+  </head>
+    <body>
+      <script>
+        
+        // Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+
+        // De 0-1 ano: Iniciante
+        // De 1-3 anos: Intermediário
+        // De 3-6 anos: Avançado
+        // De 7 acima: Jedi Master
+
+        function experiencia(anos) {
+          var resultado; 
+          
+          if (anos >= 0 && anos <= 1){
+            resultado = "Iniciante";
+            
+            }
+            else if (anos > 1 && anos <= 3){
+              resultado = "Intermediário";
+              
+              }else if (anos > 3 && anos <= 6){
+                resultado = "Avançado";
+                
+                }else if (anos >= 7){
+                  resultado = "Jedi Master";
+                  
+                  }else {
+                    resultado = "Valor inválido!";
+                  }
+                
+          return resultado;
+        }
+        
+        var anosEstudo = 7;
+        
+        resultado = experiencia(anosEstudo);
+        
+        console.log("Experiência de " + resultado); 
+
+
+      </script>
+    </body>
+
+</html>
